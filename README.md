@@ -61,6 +61,7 @@ percentage is 27.32%).
 * cd into the file content folder
 * run `virtualenv venv`
 * run `source venv/bin/activate`
+* run `pip install -r requirements.txt` to install the dependencies
 * run **only once** load_dataset.py via `python3 load_dataset.py` to load the `stations_dataset.json` to your collection
 * run the other files EXERCISE*
 
