@@ -52,10 +52,10 @@ percentage is 27.32%).
 
 * Head over to [Mongodb cloud](https://cloud.mongodb.com/) to configure Mongo DB.
 * create a .env with the contents 
-    *  `MY_USERNAME= "YOURUSERNAME"
-    *   MY_PASSWORD= "YOURPASSWORD"
-    *   MY_CLUSTER= "YOURCLUSTER"
-    *   SERVER_DOMAIN="SERVERDOMAIN"`
+    *   `MY_USERNAME="YOURUSERNAME"`
+    *   `MY_PASSWORD="YOURPASSWORD"`
+    *   `MY_CLUSTER="YOURCLUSTER"`
+    *   `SERVER_DOMAIN="YOURSERVERDOMAIN"`
 
 * open terminal
 * cd into the file content folder
