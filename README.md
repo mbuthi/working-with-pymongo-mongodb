@@ -48,3 +48,20 @@ percentage is 27.32%).
 - Sort the percentage results in decreasing order.
 - Present the results only with the top num_hours documents.
 
+## Instructions
+
+* Head over to [Mongodb cloud](https://cloud.mongodb.com/) to configure Mongo DB.
+* create a .env with the contents 
+    *  `MY_USERNAME= "YOURUSERNAME"
+    *   MY_PASSWORD= "YOURPASSWORD"
+    *   MY_CLUSTER= "YOURCLUSTER"
+    *   SERVER_DOMAIN="SERVERDOMAIN"`
+
+* open terminal
+* cd into the file content folder
+* run `virtualenv venv`
+* run `source venv/bin/activate`
+* run **only once** load_dataset.py via `python3 load_dataset.py`
+* run the other files EXERCISE*
+
+
