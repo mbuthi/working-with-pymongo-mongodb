@@ -1,11 +1,19 @@
 import pymongo
 import json
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+USERNAME = os.getenv("MY_USERNAME")
+PASSWORD = os.getenv("MY_PASSWORD")
+CLUSTER = os.getenv("MY_CLUSTER")
+SERVER_DOMAIN = os.getenv("SERVER_DOMAIN")
 class MongoConnection:
     def __init__(self) -> None:
         self.db = None
 
     def connect(self):
-        client = pymongo.MongoClient("mongodb+srv://shareapp311:2XE6GdQH1pYpkx7i@cluster0.s6uofda.mongodb.net/?retryWrites=true&w=majority",  connectTimeoutMS=60000)
+        client = pymongo.MongoClient(f"mongodb+srv://{USERNAME}:{PASSWORD}@{CLUSTER}.{SERVER_DOMAIN}/?retryWrites=true&w=majority",  connectTimeoutMS=60000)
         return client
     
     def retrieve_database(self):
